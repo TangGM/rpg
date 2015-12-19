@@ -21,6 +21,7 @@ class Enemy: Character {
     func dropLoot() -> String? { //may nil
         
         if !isAlive {
+            
             // 隨機產生一個戰利品
             let rand = Int(arc4random_uniform(UInt32(loot.count)))
 

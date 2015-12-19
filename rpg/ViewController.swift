@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = Player(name: "Tang", hp: 110, attackPwr: 20)
+        player = Player(name: "Tang", hp: 110, attackPwr: 30)
         
         generateRandomEnemy()
         
@@ -47,7 +47,8 @@ class ViewController: UIViewController {
         }
         
         enemyImg.hidden = false
-        printLbl.text = "Another enemy shows up!"
+        printLbl.text = "A \(enemy.type) shows up!"
+        enemyHpLbl.text = "\(enemy.hp) HP"
     }
 
     @IBAction func onChestTapped(sender: AnyObject) {
