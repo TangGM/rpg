@@ -165,6 +165,7 @@
                         <outlet property="enemyHpLbl" destination="MPN-cw-LCD" id="wTH-3g-WBR"/>
                         <outlet property="enemyImg" destination="e0W-lu-h3x" id="KNo-KX-8fS"/>
                         <outlet property="playerHpLbl" destination="J8S-uY-anY" id="doB-9z-SiM"/>
+                        <outlet property="playerImg" destination="kLe-6r-9ED" id="ydi-cQ-Lek"/>
                         <outlet property="printLbl" destination="n0h-Mc-kWJ" id="vlh-YP-WTh"/>
                     </connections>
                 </viewController>

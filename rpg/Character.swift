@@ -43,8 +43,9 @@ class Character {
     }
     
     func attempAttack(attckPwr: Int) -> Bool {
-        self._hp -= attckPwr
         
+        self._hp -= attckPwr
+        print ("suc")
         return true
     }
     

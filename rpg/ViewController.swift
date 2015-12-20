@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var chestBtn: UIButton!
     
+    @IBOutlet weak var playerImg: UIImageView!
     
     var player: Player!
     var enemy: Enemy!
@@ -65,7 +66,10 @@ class ViewController: UIViewController {
             printLbl.text = "Attacked \(enemy.type) for \(player.attackPwr) HP"
             enemyHpLbl.text = "\(enemy.hp) HP"
         } else {
-            printLbl.text = "Attack was unsuccessful!"
+            printLbl.text = "You killed by \(enemy.type)!"
+            playerImg.hidden = true
+            playerHpLbl.text = "0"
+            
         }
         
         if let loot = enemy.dropLoot() {

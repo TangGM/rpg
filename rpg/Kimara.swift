@@ -21,10 +21,13 @@ class Kimara: Enemy {
     }
     
     override func attempAttack(attckPwr: Int) -> Bool {
+        
         if attackPwr >= IMMUNE_MAX {
             return super.attempAttack(attckPwr)
             
         } else {
+            print ("bug")
+
             return false
         }
     }
